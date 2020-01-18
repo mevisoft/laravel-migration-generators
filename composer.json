@@ -6,7 +6,11 @@
 
   ],
   "require": {
-    "php": ">=5.4.0"
+    "php": ">=5.4.0",
+    "illuminate/support": ">=5.0",
+    "illuminate/cache": ">=5.0",
+    "doctrine/dbal": "~2.4",
+    "illuminate/console": ">=5.0"
   },
   "require-dev": {
     "behat/behat": "~2.5.1",
@@ -15,11 +19,7 @@
     "behat/mink-goutte-driver": "~1.0.9",
     "behat/mink-selenium2-driver": "~1.1.1",
     "phpunit/phpunit": ">=4.0.0",
-    "mockery/mockery": ">=0.9.0",
-    "illuminate/cache": ">=5.0",
-    "illuminate/console": ">=5.0",
-    "illuminate/support": ">=5.0",
-    "doctrine/dbal": "~2.4"
+    "mockery/mockery": ">=0.9.0"
   },
   "autoload": {
     "psr-0": {
