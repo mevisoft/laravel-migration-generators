@@ -17,7 +17,7 @@ Please note that the Laravel 4 Generator edits have been moved to `https://githu
 The recommended way to install this is through composer:
 
 ```bash
-composer require --dev "mevisoft/migrations-generator"
+composer require --dev "mevisoft/laravel-migration-generators"
 ```
 
 In Laravel 5.5 the service providers will automatically get registered. 

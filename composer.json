@@ -1,5 +1,5 @@
 {
-  "name": "mevisoft/laravel-generators",
+  "name": "mevisoft/laravel-migration-generators",
   "description": "Rapidly generate resources, migrations, models, and much more.",
   "license": "MIT",
   "authors": [
