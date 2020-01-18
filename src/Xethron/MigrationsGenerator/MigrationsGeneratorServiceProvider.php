@@ -28,8 +28,19 @@ class MigrationsGeneratorServiceProvider extends ServiceProvider {
                     $app->make('config')
                 );
             });
+		$this->app->singleton('seeder.generate',
+            function($app) {
+                return new SeedGenerateCommand(
+                    $app->make('Way\Generators\Generator'),
+                    $app->make('Way\Generators\Filesystem\Filesystem'),
+                    $app->make('Way\Generators\Compilers\TemplateCompiler'),
+                    $app->make('migration.repository'),
+                    $app->make('config')
+                );
+            });
 
 		$this->commands('migration.generate');
+		$this->commands('seeder.generate');
 
 		// Bind the Repository Interface to $app['migrations.repository']
 		$this->app->bind('Illuminate\Database\Migrations\MigrationRepositoryInterface', function($app) {
